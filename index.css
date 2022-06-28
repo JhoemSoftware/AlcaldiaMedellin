@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 html{ min-height: 100%; scroll-behavior: smooth;  }
 body{
-      background: radial-gradient(#5D7FFF,#06154D);
+      background: radial-gradient(#031247,#031247,#1e46d6);
       text-align: center;
       font-family: 'Kanit', sans-serif;
       color: #fff;
