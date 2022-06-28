@@ -12,7 +12,7 @@
             <img src="https://moodleoit1.org/pluginfile.php/1/core_admin/logocompact/300x300/1654886007/Logo%20Goya%20OIT-01.png" alt="Logo">
             <h1>Diplomado en Desarrollo de aplicaciones móviles</h1>
       </div>
-      <div>
+      <div id="navbar">
             <ul>
                   <li><a href="#inicio">Inicio</a></li>
                   <li><a href="#algUno">Algoritmo 1</a></li>
@@ -27,7 +27,7 @@
                   <li><a href="#algDiez">Algoritmo 10</a></li>
             </ul>
       </div>
-      <div id="inicio">
+      <div id="inicio"  class="contenido">
             <h3>Ejercisios Algorítmicos</h3>
             <p>
                   Esto es un documento básico HTML con CSS para presentar la
@@ -41,7 +41,7 @@
       <div id="algUno" class="contenido">
             <h2>Algorítmo Uno</h2>
             <h4>Realizar un algoritmo que lea y muestre el nombre, apellido, sexo, y estado civil de una persona</h4>
-            <input type="text" id="AlgoritmoUnoNAMEPERSON" placeholder="Ingrese el nombre" tabindex="1" autofocus required>
+            <input type="text" id="AlgoritmoUnoNAMEPERSON" placeholder="Ingrese el nombre" tabindex="1" required>
             <input type="text" id="AlgoritmoUnoLASTNAMEPERSON" placeholder="Ingrese el apellido" tabindex="2" required>
             <select id="AlgoritmoUnoSEXPERSON" tabindex="3">
                   <option value="0">Seleccione el sexo</option>
@@ -61,7 +61,41 @@
             <p id="respuestaAlgUno"></p>
       </div>
       <hr>
+      <div id="algDos" class="contenido">
+            <h2>Algorítmo Dos</h2>
+            <h4>Realizar un algoritmo que lea y muestre el sexo y estado civil de una persona</h4>
+            <select id="AlgoritmoUnoSEXPERSON" tabindex="1" required>
+                  <option value="0">Seleccione el sexo</option>
+                  <option value="Mujer">Mujer</option>
+                  <option value="Hombre">Hombre</option>
+                  <option value="No definido">No definido</option>
+            </select>
+            <select id="AlgoritmoUnoMARITALPERSON" tabindex="2" required>
+                  <option value="0">Seleccione el estado civil</option>
+                  <option value="Soltero (a)">Soltero (a)</option>
+                  <option value="Casado (a)">Casado (a)</option>
+                  <option value="Viudo (a)">Viudo (a)</option>
+                  <option value="Unión Libre">Unión Libre</option>
+                  <option value="Divorciado (a)">Divorciado (a)</option>
+            </select>
+            <input type="button" value="obtener resultado" id="botonAlgUno" tabindex="3">
+            <p id="respuestaAlgDos"></p>
+      </div>
+      <hr>
+      <div id="algTres" class="contenido">
+            <h2>Algorítmo Tres</h2>
+            <h4>Realizar un algoritmo que lea 3 números y los divida por 3</h4>
+      </div>
+      <hr>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="index.js"></script>
+      <script>
+            window.onscroll = function(){ myFunction() };
+            
+            const navbar = document.getElementById('navbar');
+            const sticky = navbar.offsetTop;
+            
+            const myFunction = () => (window.pageYOffset >= sticky) ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
+      </script>
 </body>
 </html>

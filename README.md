@@ -13,7 +13,7 @@
 		<p>Repositorio para las actividades entregables del Diplomado en Desarrollo de aplicaciones móviles de la Alcaldía de Medellín</p>
 	</div>
 	<div align="center">
-		<img src="https://moodleoit1.org/pluginfile.php/3555/mod_label/intro/Diplomado-en-Desarrollo-de-aplicaciones-moviles.jpg" style="width: 500px;">
+		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pragimtech.com%2Fwp-content%2Fuploads%2F2019%2F09%2Fandroid.jpg&f=1&nofb=1" style="width: 500px;">
 	</div>
 </body>
 </html>

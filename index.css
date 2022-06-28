@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
-html{ min-height: 100%; }
+html{ min-height: 100%; scroll-behavior: smooth;  }
 body{
       background: radial-gradient(#5D7FFF,#06154D);
       text-align: center;
@@ -13,13 +13,22 @@ body{
       padding: 1% 0 1% 0;
       color: #06154D;
 }
+.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    .sticky + .content {
+      padding-top: 60px;
+    }
 h1{ text-transform: uppercase; text-shadow: 1px .5px #5D7FFF; }
 ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: rgba(31, 115, 240, 0.5);
+      background-color: #2D2F33;
 }
 li { float: left; margin-left: 1%; }
 li a {
@@ -29,8 +38,8 @@ li a {
       padding: 15px 15px;
       text-decoration: none;
 }
-li a:hover { background-color: rgb(93, 127, 252,.4); }
-.contenido{ margin-top: 3%; }
+li a:hover { background-color: rgb(93, 127, 252); }
+.contenido{ margin-top: 3%; padding-top: 5%; padding-bottom: 4%;}
 input, select{
       background-color: transparent;
       border: 1px solid #4FFD47;
@@ -58,3 +67,6 @@ input[type="button"] {
 }
 input[type="button"]:hover { background-color: #4FFD47; color: rgb(28, 28, 28); }
 select option { background-color: rgb(28, 28, 28); text-align: left; }
+hr{
+      margin-top: 20px;margin-bottom: 20px;
+}
